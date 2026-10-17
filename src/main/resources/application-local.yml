@@ -1,0 +1,7 @@
+app:
+  greeting: "Hello from my laptop"
+  environment: "local"
+
+logging:
+  level:
+    com.example.myservice: DEBUG
