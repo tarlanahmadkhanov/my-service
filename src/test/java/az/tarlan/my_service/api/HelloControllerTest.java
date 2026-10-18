@@ -19,7 +19,7 @@ class HelloControllerTest {
     void returnsGreetingAndEnvironment() throws Exception {
         mvc.perform(get("/api/hello"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.message").value("Hi"))
+                .andExpect(jsonPath("$.message").value("Hello"))
                 .andExpect(jsonPath("$.environment").value("test"));
     }
 
